@@ -7,7 +7,10 @@
 
 ## Índice
 
+<summary>1. Introducción</summary>
 - [1. Introducción](#1-introducción)
+- <details>
+<summary>2. Requisitos previos</summary>
 - [2. Requisitos previos](#2-requisitos-previos)
 
 <details>
