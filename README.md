@@ -1053,8 +1053,12 @@ Al completar el laboratorio tendremos una infraestructura donde:
 
 De esta forma, hemos montado una infraestructura básica con servidor DHCP, enrutamiento, NAT, DNAT y alojamiento web, utilizando dos máquinas virtuales.
 
----
+## 16. Herramientas utilizadas
 
-**Autor:** [Tu nombre]  
-**Proyecto:** Laboratorio de redes y servicios  
-**Tecnologías:** Ubuntu Server, Debian 13, VirtualBox, ISC DHCP Server, iptables y Nginx.
+Para la realización de este laboratorio se han utilizado las siguientes herramientas:
+
+- **Oracle VirtualBox:** creación y gestión de las máquinas virtuales.
+- **SSH:** conexión remota a los servidores para ejecutar comandos y realizar configuraciones de forma más rápida.
+- **ChatGPT (OpenAI) y DeepSeek:** herramientas de inteligencia artificial utilizadas como apoyo para resolver dudas técnicas, revisar configuraciones y mejorar la documentación.
+
+La configuración y las comprobaciones del laboratorio se han realizado de forma práctica en las máquinas virtuales.
