@@ -20,6 +20,65 @@
 \
 \---
 
+# Laboratorio: Servidor DHCP + Router NAT + Servidor Web Nginx
+
+Laboratorio de redes virtualizadas con **VirtualBox**, utilizando Ubuntu Server como servidor DHCP y router NAT, y Debian 13 como cliente y servidor web mediante Nginx.
+
+## Índice
+
+- [1. Introducción](#1-introducción)
+- [2. Requisitos previos](#2-requisitos-previos)
+- [3. Arquitectura de red](#3-arquitectura-de-red)
+  - [3.1. Direccionamiento IP](#31-direccionamiento-ip)
+- [4. Configuración de Ubuntu Server](#4-configuración-de-ubuntu-server)
+  - [4.1. Comprobar las interfaces](#41-comprobar-las-interfaces)
+  - [4.2. Configurar la dirección IP fija](#42-configurar-la-dirección-ip-fija)
+  - [4.3. Instalar el servidor DHCP](#43-instalar-el-servidor-dhcp)
+  - [4.4. Configurar el rango DHCP](#44-configurar-el-rango-dhcp)
+  - [4.5. Reiniciar y comprobar DHCP](#45-reiniciar-y-comprobar-dhcp)
+  - [4.6. Reserva DHCP para Debian](#46-reserva-dhcp-para-debian-opcional-recomendada)
+- [5. Configurar Ubuntu como router NAT](#5-configurar-ubuntu-como-router-nat)
+  - [5.1. Activar el reenvío IPv4](#51-activar-el-reenvío-ipv4)
+  - [5.2. Configurar iptables](#52-configurar-iptables)
+  - [5.3. Comprobar las reglas](#53-comprobar-las-reglas)
+  - [5.4. Guardar las reglas](#54-guardar-las-reglas)
+- [6. Configurar Debian 13 como cliente DHCP](#6-configurar-debian-13-como-cliente-dhcp)
+  - [6.1. Configurar la interfaz de red](#61-configurar-la-interfaz-de-red)
+  - [6.2. Comprobar la dirección IP](#62-comprobar-la-dirección-ip)
+  - [6.3. Comprobar la conexión a Internet](#63-comprobar-la-conexión-a-internet)
+- [7. Instalar y configurar Nginx en Debian](#7-instalar-y-configurar-nginx-en-debian)
+  - [7.1. Instalar Nginx](#71-instalar-nginx)
+  - [7.2. Comprobar la página web](#72-comprobar-la-página-web)
+- [8. Configurar DNAT en Ubuntu](#8-configurar-dnat-en-ubuntu)
+  - [8.1. Redirigir el tráfico HTTP](#81-redirigir-el-tráfico-http)
+  - [8.2. Comprobar DNAT](#82-comprobar-dnat)
+  - [8.3. Reenvío de puertos en VirtualBox](#83-reenvío-de-puertos-en-virtualbox)
+  - [8.4. Recorrido completo de la conexión](#84-recorrido-completo-de-la-conexión)
+- [9. Comprobaciones finales](#9-comprobaciones-finales)
+  - [9.1. Comprobar las interfaces de Ubuntu](#91-comprobar-las-interfaces-de-ubuntu)
+  - [9.2. Comprobar DHCP en Debian](#92-comprobar-dhcp-en-debian)
+  - [9.3. Comprobar la puerta de enlace](#93-comprobar-la-puerta-de-enlace)
+  - [9.4. Comprobar la conexión entre las máquinas](#94-comprobar-la-conexión-entre-las-máquinas)
+  - [9.5. Comprobar la salida a Internet](#95-comprobar-la-salida-a-internet)
+  - [9.6. Comprobar Nginx](#96-comprobar-nginx)
+  - [9.7. Comprobar el acceso desde el ordenador físico](#97-comprobar-el-acceso-desde-el-ordenador-físico)
+- [10. Problemas habituales](#10-problemas-habituales)
+  - [10.1. DHCP no arranca](#101-dhcp-no-arranca)
+  - [10.2. Debian no recibe una dirección IP](#102-debian-no-recibe-una-dirección-ip)
+  - [10.3. Debian cambia de dirección IP](#103-debian-cambia-de-dirección-ip)
+  - [10.4. Debian tiene conexión por IP, pero no por dominio](#104-debian-tiene-conexión-por-ip-pero-no-por-dominio)
+  - [10.5. No se puede acceder desde el ordenador físico](#105-no-se-puede-acceder-desde-el-ordenador-físico)
+  - [10.6. Problemas con iptables y nftables](#106-problemas-con-iptables-y-nftables)
+- [11. Automatización mediante scripts](#11-automatización-mediante-scripts)
+  - [11.1. Script de Ubuntu Server](#111-script-de-ubuntu-server)
+  - [11.2. Script de Debian 13](#112-script-de-debian-13)
+- [12. Estructura recomendada del repositorio](#12-estructura-recomendada-del-repositorio)
+- [13. Licencia](#13-licencia)
+- [14. Cómo contribuir](#14-cómo-contribuir)
+- [15. Resultado final](#15-resultado-final)
+
+
+
 
 ## 1. Introducción
 
