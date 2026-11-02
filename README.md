@@ -5,25 +5,6 @@
 ![VirtualBox](https://img.shields.io/badge/VirtualBox-7.x-183A61?logo=virtualbox&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-Web_Server-009639?logo=nginx&logoColor=white)
 
-\## Índice\
-\
-\- [1. Arquitectura del laboratorio]\(#1-arquitectura-del-laboratorio)\
-\- [2. Preparación en VirtualBox]\(#2-preparación-en-virtualbox)\
-\- [3. Configuración del servidor DHCP]\(#3-configuración-del-servidor-dhcp)\
-\- [4. Configuración del cliente Debian 13]\(#4-configuración-del-cliente-debian-13)\
-\- [5. Configuración del router NAT]\(#5-configuración-del-router-nat)\
-\- [6. Instalación de Nginx]\(#6-instalación-de-nginx)\
-\- [7. Publicación de la web mediante DNAT]\(#7-publicación-de-la-web-mediante-dnat)\
-\- [8. Persistencia de las reglas iptables]\(#8-persistencia-de-las-reglas-iptables)\
-\- [9. Comprobaciones finales]\(#9-comprobaciones-finales)\
-\- [10. Problemas habituales]\(#10-problemas-habituales)\
-\
-\---
-
-# Laboratorio: Servidor DHCP + Router NAT + Servidor Web Nginx
-
-Laboratorio de redes virtualizadas con **VirtualBox**, utilizando Ubuntu Server como servidor DHCP y router NAT, y Debian 13 como cliente y servidor web mediante Nginx.
-
 ## Índice
 
 - [1. Introducción](#1-introducción)
@@ -76,8 +57,6 @@ Laboratorio de redes virtualizadas con **VirtualBox**, utilizando Ubuntu Server 
 - [13. Licencia](#13-licencia)
 - [14. Cómo contribuir](#14-cómo-contribuir)
 - [15. Resultado final](#15-resultado-final)
-
-
 
 
 ## 1. Introducción
