@@ -103,6 +103,7 @@
 - [13. Licencia](#13-licencia)
 - [14. Cómo contribuir](#14-cómo-contribuir)
 - [15. Resultado final](#15-resultado-final)
+- [16. Herramientas utilizadas](#16-herramientas-utilizadas)
 
 
 ## 1. Introducción
