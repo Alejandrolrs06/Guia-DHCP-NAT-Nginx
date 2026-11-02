@@ -5,13 +5,22 @@
 ![VirtualBox](https://img.shields.io/badge/VirtualBox-7.x-183A61?logo=virtualbox&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-Web_Server-009639?logo=nginx&logoColor=white)
 
+
 ## Índice
 
+<details>
 <summary>1. Introducción</summary>
+
 - [1. Introducción](#1-introducción)
-- <details>
+
+</details>
+
+<details>
 <summary>2. Requisitos previos</summary>
+
 - [2. Requisitos previos](#2-requisitos-previos)
+
+</details>
 
 <details>
 <summary>3. Arquitectura de red</summary>
@@ -102,11 +111,41 @@
 
 </details>
 
+<details>
+<summary>12. Estructura recomendada del repositorio</summary>
+
 - [12. Estructura recomendada del repositorio](#12-estructura-recomendada-del-repositorio)
+
+</details>
+
+<details>
+<summary>13. Licencia</summary>
+
 - [13. Licencia](#13-licencia)
+
+</details>
+
+<details>
+<summary>14. Cómo contribuir</summary>
+
 - [14. Cómo contribuir](#14-cómo-contribuir)
+
+</details>
+
+<details>
+<summary>15. Resultado final</summary>
+
 - [15. Resultado final](#15-resultado-final)
+
+</details>
+
+<details>
+<summary>16. Herramientas utilizadas</summary>
+
 - [16. Herramientas utilizadas](#16-herramientas-utilizadas)
+
+</details>
+
 
 
 ## 1. Introducción
